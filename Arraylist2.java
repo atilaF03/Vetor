@@ -6,6 +6,9 @@ public class Arraylist2 {
   public static void main(String[] args) {
     Scanner sc =new Scanner(System.in);
     ArrayList<String> nomes  = new ArrayList<>();
+         ArrayList<String> telefone  = new ArrayList<>();
+
+     
      
      
 

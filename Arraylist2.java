@@ -20,12 +20,31 @@ public class Arraylist2 {
           telefones.add(telefone);
           break;
         case 2:
-        
-        
-        
-        
-        break;
+          if (nomes.isEmpty()) {
+            System.out.println("Nenhum contato cadastrado.");
+          } else {
+            System.out.println("\nLista de Contatos:");
+            for (int i = 0; i < nomes.size(); i++) {
+              System.out.println((i + 1) + ". " + nomes.get(i) + " - " + telefones.get(i));
+            }
+          }
+          break;
+        case 3:
+          if (nomes.isEmpty()) {
+            System.out.println("sua lista telefonica está vazia");
+          } else {
+            System.out.println("informe o númer do contato para excluir: ");
+            int indice = sc.nextInt();
+            sc.nextLine();
+            if (indice > 0 && indice <= nomes.size()) {
+              nomes.remove(indice - 1);
+              telefones.remove(indice - 1);
+            } else {
+              System.err.println("indice invalido");
+            }
 
+          }
+          break;
         default:
           break;
       }
@@ -33,6 +52,7 @@ public class Arraylist2 {
       sc.close();
     }
   }
+
   public static void informacoes() {
     System.out.println("++++menu++++");
     System.out.println("1- cadastrar contatos");

@@ -23,16 +23,16 @@ public class Arraylist2 {
         
         
         
+        
         break;
 
         default:
           break;
       }
 
+      sc.close();
     }
-
   }
-
   public static void informacoes() {
     System.out.println("++++menu++++");
     System.out.println("1- cadastrar contatos");

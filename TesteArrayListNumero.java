@@ -12,10 +12,9 @@ public class TesteArrayListNumero {
             numeros.add(numero);
         }
         int tamanho = numeros.size();
-        System.out.println("Tamanho do  Arraylist: "+ tamanho);
+        System.out.println("Tamanho do  Arraylist: " + tamanho);
         System.out.println("elementos do Arrayliste de inteiros:" + numeros);
-        
-    
+
         sc.close();
     }
 }

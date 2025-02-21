@@ -9,7 +9,7 @@ public class TesteArrayListString {
         
         // Adiciona 10 Strings informadas pelo usuário
         System.out.println("Digite 10 palavras:");
-        for (int i = 0; i < 10; i++) {
+        for (int i = 1; i < 10; i++) {
             System.out.print("Palavra " + (i + 1) + ": ");
             lista.add(scanner.nextLine());
         }
@@ -24,9 +24,9 @@ public class TesteArrayListString {
         Collections.sort(lista);
         
         // Imprime os valores ordenados da lista
-        System.out.println("\nLista após a ordenação:");
-        for (String s : lista) {
-            System.out.println(s);
+        System.out.println("\nLista depois  a ordenação:");
+        for (String nomes : lista) {
+            System.out.println(nomes);
         }
         
         scanner.close();

@@ -15,7 +15,7 @@ public class Arraylist2 {
           System.out.println("informe um nome");
           String nome = sc.next();
           System.out.println("informe um telefone");
-          String telefone = sc.nextLine();
+          String telefone = sc.next();
           nomes.add(nome);
           telefones.add(telefone);
           break;
@@ -45,11 +45,14 @@ public class Arraylist2 {
 
           }
           break;
+        case 4:
+          System.out.println("Power off...");
+          sc.close();
+          return;
         default:
-          break;
+          System.out.println("opção invalida");
       }
 
-      sc.close();
     }
   }
 
